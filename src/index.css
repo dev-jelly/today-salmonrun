@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body, * {
+  margin: 0;
+  font-family: "SplatoonK", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@font-face {
+  font-family: "SplatoonK";
+  src: url("/fonts/splatoon3.ttf");
+}
+
+.salmonrun-background {
+  background-color: rgb(255 86 0 / 1);
+}
+
+
+.salmonrun-background {
+  background: url(/monsters-transparent-bg.png), linear-gradient(180deg, rgba(2, 0, 36, .1) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, .2) 100%);
+  background-size: 400px;
+  background-position: top center;
+
+}
+
+
+.weapon {
+  grid-area: weapon;
+}
+
+.monster {
+  grid-area: monster;
+}
+
+.throughout {
+  grid-area: throughtout;
+}
+
+.warning {
+  grid-area: warning;
+}
