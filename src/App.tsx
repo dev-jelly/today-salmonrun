@@ -1,8 +1,7 @@
 import "./App.css";
-import sample from "./sample.json";
 import React, { FC, useEffect, useState } from "react";
 import { SalmonRunInfo } from "./types/salmon-run-info";
-import { SalmonRun } from "./components/SalmonRun";
+import { SalmonRunList } from "./components/SalmonRunList";
 
 const App: FC = () => {
   const [salmons, setSalmons] = useState<SalmonRunInfo[]>([]);
@@ -16,7 +15,7 @@ const App: FC = () => {
     })();
   }, []);
   if (salmons.length === 0) return <></>;
-  return <SalmonRun salmons={salmons} weaponLocale={weaponLocale} />;
+  return <SalmonRunList salmons={salmons} weaponLocale={weaponLocale} />;
 };
 
 export const parsingAboutSalmonRun = async (): Promise<SalmonRunInfo[]> => {

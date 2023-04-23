@@ -17,11 +17,7 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
               <h2 className={"text-center  text-orange-400"}>
                 {"{잡기 쉬운 거물}"}
               </h2>
-              <div className={"mt-2 text-center text-2xl"}>
-                {weaponInfos[name]?.monster === "all"
-                  ? "전부"
-                  : weaponInfos[name]?.monster}
-              </div>
+              <MonsterRender monster={weaponInfos[name]?.monster} />
             </div>
           </div>
           <WarningRender warning={weaponInfos[name]?.warning} />
@@ -80,6 +76,38 @@ const WarningRender: FC<{ warning: string }> = ({
   );
 };
 
+type MonsterRenderProps = {
+  monster: string;
+};
+
+export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
+  if (monster === "?") {
+    return <div className={"mt-2 text-center text-2xl"}>{monster}</div>;
+  }
+  if (["all"].includes(monster) || !monster) {
+    return <div className={"mt-6 text-center text-2xl"}>전부</div>;
+  }
+  if (!monster.match(/[A-Z]/gi)) {
+    return <div className={"mt-2 text-center text-2xl"}>{monster}</div>;
+  }
+
+  const monsters = monster.split(",");
+
+  return (
+    <div className={"grid grid-cols-2 items-center"}>
+      {monsters.map((monster) => {
+        return (
+          <img
+            key={monster}
+            src={"/images/boses/" + monster + "_Icon.webp"}
+            alt={monster}
+          />
+        );
+      })}
+    </div>
+  );
+};
+
 export type WeaponInfo = {
   [name: string]: {
     monster: string;
@@ -88,14 +116,14 @@ export type WeaponInfo = {
   };
 };
 
-export const weaponInfos: WeaponInfo = {
+export const weaponInfos = {
   ".96 Gal": {
     monster: `all`,
     walkthrough: `없음`,
     warning: `없음`,
   },
   "L-3 Nozzlenose": {
-    monster: `Drizzer,Stillhead,Steel_Eel,Big_Shot`,
+    monster: `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
     walkthrough: `딱히 의식해야할 것 없음`,
     warning: `없음`,
   },
@@ -105,7 +133,7 @@ export const weaponInfos: WeaponInfo = {
     warning: `없음`,
   },
   "R-Pen": {
-    monster: `Drizzer,Stillhead,Steel_Eel,Big_Shot`,
+    monster: `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
     walkthrough: `타워 : 잡으러 가지
 맡고 무조건 폭탄
 던지기  던지기  던지기  던지기 
@@ -120,7 +148,7 @@ export const weaponInfos: WeaponInfo = {
     warning: `없음`,
   },
   "Bamboozler 14 Mk I": {
-    monster: `Drizzer,Stillhead,Steel_Eel`,
+    monster: `Drizzler,Steelhead,Steel_Eel`,
     walkthrough: `폭탄 : 꽤 먼 거리에 서도 세로베기로
 윈틴킨!  윈틴킨!  윈틴킨!  윈틴킨!  윈틴킨! 
 박쥐 : 착 답라붙어
@@ -155,7 +183,7 @@ export const weaponInfos: WeaponInfo = {
     warning: `없음`,
   },
   "E-liter 4K": {
-    monster: `Drizzer,Stillhead,Steel_Eel`,
+    monster: `Drizzler,Steelhead,Steel_Eel`,
     walkthrough: `타워 :
 푹탄 던지기(3번)
 굵은
@@ -190,7 +218,7 @@ export const weaponInfos: WeaponInfo = {
     warning: `없음`,
   },
   "Goo Tuber": {
-    monster: `Drizzer,Stillhead,Steel_Eel,Big_Shot`,
+    monster: `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
     walkthrough: `타워 :
 웬만해선 폭탄
 던지기
@@ -222,7 +250,7 @@ export const weaponInfos: WeaponInfo = {
     warning: `없음`,
   },
   "Splat Charger": {
-    monster: `Drizzer,Stillhead,Steel_Eel,Big_Shot`,
+    monster: `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
     walkthrough: `타워: 그냥 폭탄 던지기, 나머지는 의식할 거 없음`,
     warning: `없음`,
   },
