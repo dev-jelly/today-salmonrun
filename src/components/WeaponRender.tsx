@@ -86,7 +86,7 @@ export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
     return <div className={"mt-2 text-center text-2xl"}>{monster}</div>;
   }
   if (["all"].includes(monster) || !monster) {
-    return <div className={"mt-6 text-center text-2xl"}>전부</div>;
+    return <div className={"mt-10 text-center text-2xl"}>전부</div>;
   }
   if (!monster.match(/[A-Z]/gi)) {
     return <div className={"mt-2 text-center text-2xl"}>{monster}</div>;
