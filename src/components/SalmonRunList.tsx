@@ -75,11 +75,17 @@ export const SalmonRun: FC<SalmonRunProps> = ({
         })}
       </h1>
       <div className="salmonrun-background relative flex w-screen flex-col justify-center gap-4 overflow-hidden bg-opacity-70 p-2 pb-16 text-white">
-        <button onClick={slideToPrevItem} className={"absolute left-4 z-10"}>
+        <button
+          onClick={slideToPrevItem}
+          className={"absolute left-0 z-10 h-full p-4"}
+        >
           {" <<"}
         </button>
         <div className={"w-[calc(100%)]"}>{carouselFragment}</div>
-        <button onClick={slideToNextItem} className={"absolute right-4"}>
+        <button
+          onClick={slideToNextItem}
+          className={"absolute right-0 z-10 h-full p-4"}
+        >
           {">> "}
         </button>
       </div>

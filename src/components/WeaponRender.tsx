@@ -6,7 +6,7 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
   const { name, image, locale } = props;
   return (
     <div className={"flex h-full w-full items-center justify-center gap-1 p-2"}>
-      <div className="min-w-[320px] overflow-hidden rounded-lg bg-black bg-opacity-70 p-8 shadow md:max-w-md lg:max-w-xl">
+      <div className="min-h-[28rem] min-w-[22rem] overflow-hidden rounded-lg bg-black bg-opacity-70 p-8 shadow md:max-w-md lg:max-w-xl">
         <div className="flex flex-col gap-4">
           <div className="flex gap-2">
             <WeaponImageRender
@@ -14,7 +14,7 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
               name={name}
               locale={locale}
             />
-            <div className="w-full rounded border border-white p-2 outline-1 outline-white">
+            <div className="h-40 w-full rounded border border-white p-2 outline-1 outline-white">
               <h2 className={"text-center text-orange-400"}>
                 {"{잡기 쉬운 거물}"}
               </h2>
@@ -46,10 +46,10 @@ const WeaponImageRender: FC<{
   locale: string;
 }) => {
   return (
-    <div className="flex w-full flex-col items-center rounded border border-white p-2">
+    <div className="flex h-40 w-full flex-col items-center rounded border border-white p-2">
       <h2 className={"z-10 text-center  text-orange-400"}>{"{무기}"}</h2>
       <img
-        className={"h-16 w-16 justify-center object-cover hover:scale-110"}
+        className={"h-24 w-24 justify-center object-cover hover:scale-125"}
         src={imageUrl}
         alt={name}
       />
@@ -95,12 +95,13 @@ export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
   const monsters = monster.split(",");
 
   return (
-    <div className={"grid grid-cols-2 items-center"}>
+    <div className={"grid grid-cols-2 items-center gap-2 "}>
       {monsters.map((monster) => {
         return (
           <img
             key={monster}
             src={"images/boses/" + monster + "_Icon.webp"}
+            className={"h-14 w-14 justify-center object-cover hover:scale-125"}
             alt={monster}
           />
         );
