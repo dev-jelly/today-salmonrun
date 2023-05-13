@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { SalmonRunInfo } from "../types/salmon-run-info";
 import { useSpringCarousel } from "react-spring-carousel";
 import { WeaponRender } from "./WeaponRender";
@@ -11,6 +11,7 @@ import { NextArrow } from "./NextArrow";
 import { PrevArrow } from "./PrevArrow";
 import { MapRender } from "./MapRender";
 import { useSplatoonLocale } from "../store/use-locale";
+import { animated, useSpring, useTransition } from "react-spring";
 
 export const SalmonRunList: FC<{
   salmons: SalmonRunInfo[];
@@ -63,11 +64,27 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
     ),
   }));
 
-  const { carouselFragment, slideToPrevItem, slideToNextItem } =
+  const { carouselFragment, slideToPrevItem, slideToNextItem, slideToItem } =
     useSpringCarousel({
       withLoop: true,
       items: [mapItem, ...items],
     });
+
+  const [animationStyle] = useSpring(
+    () => ({
+      from: { opacity: 0 },
+      to: { opacity: 1 },
+      reset: true,
+    }),
+    [page]
+  );
+
+  useEffect(() => {
+    slideToItem(0);
+    return () => {
+      slideToItem(0);
+    };
+  }, [page]);
 
   return (
     <div
@@ -102,7 +119,10 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
           }}
         />
       </div>
-      <div className="salmonrun-background relative flex w-screen flex-col justify-center gap-4 overflow-hidden bg-opacity-70 p-2 pb-16 text-white">
+      <animated.div
+        style={animationStyle}
+        className="salmonrun-background relative flex w-screen flex-col justify-center gap-4 overflow-hidden bg-opacity-70 p-2 pb-16 text-white"
+      >
         <button
           onClick={slideToPrevItem}
           className={"absolute left-0 z-10 h-full p-4"}
@@ -116,7 +136,7 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
         >
           {">> "}
         </button>
-      </div>
+      </animated.div>
     </div>
   );
 };
