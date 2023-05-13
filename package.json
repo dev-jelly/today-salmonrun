@@ -8,11 +8,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.14",
+    "@heroicons/react": "^2.0.17",
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.1",
-    "react-spring-carousel": "^2.0.19"
+    "react-spring-carousel": "^2.0.19",
+    "zustand": "^4.3.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.38",
