@@ -2,20 +2,22 @@ import "./App.css";
 import React, { FC, useEffect, useState } from "react";
 import { SalmonRunInfo } from "./types/salmon-run-info";
 import { SalmonRunList } from "./components/SalmonRunList";
+import { SplatoonLocale, useSplatoonLocale } from "./store/use-locale";
+import { shallow } from "zustand/shallow";
 
 const App: FC = () => {
   const [salmons, setSalmons] = useState<SalmonRunInfo[]>([]);
-  const [weaponLocale, setWeaponLocale] = useState<WeaponLocale>({});
+  const setLocale = useSplatoonLocale((state) => state.setLocale, shallow);
   useEffect(() => {
     (async () => {
+      const locales = await parsingKoreanLocaleWeapons();
+      setLocale(locales);
       const infos = await parsingAboutSalmonRun();
       setSalmons(infos);
-      const weapons = await parsingKoreanLocaleWeapons();
-      setWeaponLocale(weapons);
     })();
   }, []);
   if (salmons.length === 0) return <></>;
-  return <SalmonRunList salmons={salmons} weaponLocale={weaponLocale} />;
+  return <SalmonRunList salmons={salmons} />;
 };
 
 export const parsingAboutSalmonRun = async (): Promise<SalmonRunInfo[]> => {
@@ -25,17 +27,11 @@ export const parsingAboutSalmonRun = async (): Promise<SalmonRunInfo[]> => {
   return body.data.coopGroupingSchedule.regularSchedules.nodes;
 };
 
-export type WeaponLocale = {
-  [key: string]: {
-    name: string;
-  };
-};
-
-export const parsingKoreanLocaleWeapons = async (): Promise<WeaponLocale> => {
+export const parsingKoreanLocaleWeapons = async (): Promise<SplatoonLocale> => {
   const response = await fetch("https://splatoon3.ink/data/locale/ko-KR.json");
   const locales = await response.json();
 
-  return locales.weapons as WeaponLocale;
+  return locales as SplatoonLocale;
 };
 
 export default App;

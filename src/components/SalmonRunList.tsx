@@ -2,7 +2,6 @@ import React, { FC } from "react";
 import { SalmonRunInfo } from "../types/salmon-run-info";
 import { useSpringCarousel } from "react-spring-carousel";
 import { WeaponRender } from "./WeaponRender";
-import { WeaponLocale } from "../App";
 import { format } from "date-fns";
 import { ko } from "date-fns/locale";
 import Header from "./Header";
@@ -10,11 +9,12 @@ import { usePage } from "../store/use-page";
 import { Footer } from "./Footer";
 import { NextArrow } from "./NextArrow";
 import { PrevArrow } from "./PrevArrow";
+import { MapRender } from "./MapRender";
+import { useSplatoonLocale } from "../store/use-locale";
 
 export const SalmonRunList: FC<{
   salmons: SalmonRunInfo[];
-  weaponLocale: WeaponLocale;
-}> = ({ salmons, weaponLocale }) => {
+}> = ({ salmons }) => {
   return (
     <div className={"h-screen w-screen overflow-scroll bg-splatoon-salmonRun"}>
       <Header />
@@ -23,7 +23,6 @@ export const SalmonRunList: FC<{
           <SalmonRun
             salmon={salmon}
             key={index}
-            weaponLocale={weaponLocale}
             current={index === 0}
             index={index}
           />
@@ -36,53 +35,39 @@ export const SalmonRunList: FC<{
 
 type SalmonRunProps = {
   salmon: SalmonRunInfo;
-  weaponLocale: WeaponLocale;
   current: boolean;
   index: number;
 };
 
-export const SalmonRun: FC<SalmonRunProps> = ({
-  salmon,
-  weaponLocale,
-  current,
-  index,
-}) => {
+export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
   const { page, setPage } = usePage();
+  const locale = useSplatoonLocale((state) => state.locale);
   const mapItem = {
     id: salmon.setting.coopStage.name,
+    renderItem: (
+      <MapRender
+        name={salmon.setting.coopStage.name}
+        image={salmon.setting.coopStage.image}
+        id={salmon.setting.coopStage.id}
+        thumbnailImage={salmon.setting.coopStage.thumbnailImage}
+      />
+    ),
   };
   const items = salmon.setting.weapons.map((w) => ({
     id: w.name,
     renderItem: (
       <WeaponRender
         {...w}
-        locale={weaponLocale[w.__splatoon3ink_id]?.name ?? w.name}
+        locale={locale.weapons[w.__splatoon3ink_id]?.name ?? w.name}
       />
     ),
   }));
+
   const { carouselFragment, slideToPrevItem, slideToNextItem } =
     useSpringCarousel({
       withLoop: true,
-      items: salmon.setting.weapons.map((w) => ({
-        id: w.name,
-        renderItem: (
-          <WeaponRender
-            {...w}
-            locale={weaponLocale[w.__splatoon3ink_id]?.name ?? w.name}
-          />
-        ),
-      })),
+      items: [mapItem, ...items],
     });
-  console.log(
-    "page: ",
-    page,
-    "index: ",
-    index,
-    "current: ",
-    current,
-    "salmon: ",
-    salmon
-  );
 
   return (
     <div

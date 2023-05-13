@@ -1,7 +1,7 @@
 import type { FC } from "react";
-import { weaponInfos } from "../const/weapon-info";
 import React from "react";
-import { MonsterRender } from "./WeaponRender";
+import { useSplatoonLocale } from "../store/use-locale";
+import { shallow } from "zustand/shallow";
 
 export interface MapRenderProps {
   id: string;
@@ -12,19 +12,25 @@ export interface MapRenderProps {
   image: {
     url: string;
   };
-  locale: string;
 }
 
 export const MapRender: FC<MapRenderProps> = (props) => {
-  const { name, image, locale } = props;
+  const { id, name, image } = props;
+  const locale = useSplatoonLocale((state) => state.locale, shallow);
   return (
-    <div className={"flex h-full w-full items-center justify-center gap-1 p-2"}>
-      <div className="flex flex-col gap-4">
+    <div
+      className={
+        "flex h-full w-full flex-col items-center justify-center gap-1 p-2"
+      }
+    >
+      <div className="flex flex-col gap-4 pt-12">
         <div className="flex gap-2">
           <img src={image.url} alt={name} />
         </div>
-        <h2>{locale}</h2>
       </div>
+      <h2 className={"-translate-y-1/2 rounded-md bg-black px-8 py-4 text-2xl"}>
+        {locale.stages[id].name}
+      </h2>
     </div>
   );
 };
