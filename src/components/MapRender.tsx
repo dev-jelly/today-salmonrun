@@ -23,12 +23,16 @@ export const MapRender: FC<MapRenderProps> = (props) => {
         "flex h-full w-full flex-col items-center justify-center gap-1 p-2"
       }
     >
-      <div className="flex flex-col gap-4 pt-12">
+      <div className="flex flex-col gap-4 pt-12 ">
         <div className="flex gap-2">
-          <img src={image.url} alt={name} />
+          <img src={image.url} alt={name} className={"object-scale-down"} />
         </div>
       </div>
-      <h2 className={"-translate-y-1/2 rounded-md bg-black px-8 py-4 text-2xl"}>
+      <h2
+        className={
+          "text-md -translate-y-1/2 rounded-md bg-black px-8 py-4  md:text-2xl"
+        }
+      >
         {locale.stages[id].name}
       </h2>
     </div>

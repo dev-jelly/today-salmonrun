@@ -115,7 +115,7 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
         index !== page ? "hidden" : ""
       }`}
     >
-      <div className={"flex w-full items-center justify-around"}>
+      <div className={"flex w-full items-center justify-around py-2"}>
         <PrevArrow
           className={`${index === 0 ? "w-0 opacity-0" : ""}`}
           onClick={() => {
@@ -123,7 +123,7 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
           }}
         />
         <h1
-          className={`p-4 text-center md:text-xl ${
+          className={`p-2 text-center text-sm md:p-4  md:text-xl ${
             current ? "text-lime-400" : "text-white"
           }`}
         >
@@ -144,15 +144,15 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
       </div>
       <animated.div
         style={animationStyle}
-        className="salmonrun-background relative flex w-screen flex-col justify-center gap-4 overflow-hidden bg-opacity-70 p-2 pb-16 text-white"
+        className="salmonrun-background relative flex w-screen flex-col justify-center gap-2 overflow-hidden bg-opacity-70 py-2 text-white md:pb-16"
       >
+        <div className={"w-screen"}>{carouselFragment}</div>
         <button
           onClick={slideToPrevItem}
           className={"absolute left-0 z-10 h-full p-4"}
         >
           {" <<"}
         </button>
-        <div className={"w-[calc(100%)]"}>{carouselFragment}</div>
         <button
           onClick={slideToNextItem}
           className={"absolute right-0 z-10 h-full p-4"}

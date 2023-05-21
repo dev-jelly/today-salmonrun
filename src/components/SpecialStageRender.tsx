@@ -47,40 +47,37 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
   const locale = useSplatoonLocale((state) => state.locale, shallow);
 
   const infoKey = mapName.toLowerCase().replaceAll(" ", "_") as MapName;
-  console.log(infoKey);
   return (
     <div
       className={
         "flex w-full max-w-full flex-col items-center justify-center gap-1 p-2"
       }
     >
-      <div className="flex max-w-md flex-col gap-4 pt-12">
-        <div className="flex gap-2">
-          <img
-            className={"h-full object-cover p-4"}
-            src={"images/special_stages/" + stage + "_" + infoKey + ".png"}
-            alt={mapName}
-          />
-        </div>
-      </div>
-      <h2
-        className={
-          "flex -translate-y-1/2 rounded-md bg-black px-8 py-4 text-2xl"
-        }
-      >
-        <a
-          href={`${youtubeInfo[stage].url}${youtubeInfo[stage][infoKey]}`}
-          target={"_blank"}
+      <div className="flex h-64 h-[28rem] max-w-md flex-col gap-4  px-2">
+        <img
+          className={"h-full object-scale-down p-4"}
+          src={"images/special_stages/" + stage + "_" + infoKey + ".png"}
+          alt={mapName}
+        />
+        <h2
+          className={
+            "text-md flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 md:text-2xl"
+          }
         >
-          <img
-            src="images/YouTubeLogo.svg"
-            className={"mr-4 w-12"}
-            alt="Youtube's Logo"
-          />
-        </a>
-        {locale.stages[id].name} {stage === "grill" ? "그릴" : "빛파리"}{" "}
-        추천장소
-      </h2>
+          <a
+            href={`${youtubeInfo[stage].url}${youtubeInfo[stage][infoKey]}`}
+            target={"_blank"}
+          >
+            <img
+              src="images/YouTubeLogo.svg"
+              className={"mr-4 w-12"}
+              alt="Youtube's Logo"
+            />
+          </a>
+          {locale.stages[id].name} {stage === "grill" ? "그릴" : "빛파리"}{" "}
+          추천장소
+        </h2>
+      </div>
     </div>
   );
 };
