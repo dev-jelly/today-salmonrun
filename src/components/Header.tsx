@@ -22,7 +22,7 @@ export default function Header() {
       >
         <div className="flex lg:flex-1">
           <a href="#" onClick={() => setPage(0)} className="-m-1.5 p-1.5">
-            <span className="text-xl">오늘 연어 한판?!</span>
+            <span className="text-xl">초코야! 오늘 연어 한판?!</span>
           </a>
         </div>
         <div className="flex lg:hidden">
