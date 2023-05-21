@@ -92,7 +92,7 @@ export default function Header() {
                             className="-m-1.5 p-1.5"
                           >
                             <Dialog.Title className="text-xl text-white">
-                              오늘 연어한판?!
+                              초코야! 오늘 연어한판?!
                             </Dialog.Title>
                           </a>
                           <button
