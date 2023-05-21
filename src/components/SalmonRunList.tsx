@@ -144,7 +144,7 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
       </div>
       <animated.div
         style={animationStyle}
-        className="salmonrun-background relative flex w-screen flex-col justify-center gap-2 overflow-hidden bg-opacity-70 py-2 text-white md:pb-16"
+        className="salmonrun-background relative flex w-screen flex-col justify-center gap-2 overflow-hidden bg-opacity-70 pb-8 text-white md:pb-16"
       >
         <div className={"w-screen"}>{carouselFragment}</div>
         <button

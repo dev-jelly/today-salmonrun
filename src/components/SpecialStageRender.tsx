@@ -61,7 +61,7 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
         />
         <h2
           className={
-            "text-md flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 md:text-2xl"
+            "flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 text-xl md:text-2xl"
           }
         >
           <a

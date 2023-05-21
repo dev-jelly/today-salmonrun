@@ -30,7 +30,7 @@ export const MapRender: FC<MapRenderProps> = (props) => {
       </div>
       <h2
         className={
-          "text-md -translate-y-1/2 rounded-md bg-black px-8 py-4  md:text-2xl"
+          "-translate-y-1/2 rounded-md bg-black px-8 py-4 text-xl  md:text-2xl"
         }
       >
         {locale.stages[id].name}
