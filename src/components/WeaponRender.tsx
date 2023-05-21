@@ -7,7 +7,7 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
   return (
     <div
       className={
-        "flex h-full w-full items-center justify-center md:gap-1 md:p-2"
+        "flex h-full w-full items-center justify-center py-1 md:gap-1 md:p-2"
       }
     >
       <div className="min-h-[28rem] min-w-[22rem] overflow-hidden rounded-lg bg-black bg-opacity-70 p-8 shadow md:max-w-md lg:max-w-xl">

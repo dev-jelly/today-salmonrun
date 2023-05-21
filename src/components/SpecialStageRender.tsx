@@ -50,7 +50,7 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
   return (
     <div
       className={
-        "flex w-full max-w-full flex-col items-center justify-center  md:gap-1 md:p-2"
+        "flex w-full max-w-full flex-col items-center justify-center py-1  md:gap-1 md:p-2"
       }
     >
       <div className="flex h-64 h-[28rem] max-w-md flex-col gap-4 px-2">
