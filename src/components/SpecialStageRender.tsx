@@ -61,7 +61,7 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
         />
         <h2
           className={
-            "flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 text-xl md:text-2xl"
+            "text-md flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 sm:text-xl md:text-2xl"
           }
         >
           <a
@@ -74,8 +74,8 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
               alt="Youtube's Logo"
             />
           </a>
-          {locale.stages[id].name} {stage === "grill" ? "그릴" : "빛파리"}{" "}
-          추천장소
+          {locale.stages[id].name} {stage === "grill" ? "그릴" : "빛파리"} 추천
+          위치
         </h2>
       </div>
     </div>
