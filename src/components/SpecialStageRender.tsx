@@ -58,7 +58,7 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
         <div className="flex gap-2">
           <img
             className={"h-full object-cover p-4"}
-            src={"/images/special_stages/" + stage + "_" + infoKey + ".png"}
+            src={"images/special_stages/" + stage + "_" + infoKey + ".png"}
             alt={mapName}
           />
         </div>
@@ -73,7 +73,7 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
           target={"_blank"}
         >
           <img
-            src="/images/YouTubeLogo.svg"
+            src="images/YouTubeLogo.svg"
             className={"mr-4 w-12"}
             alt="Youtube's Logo"
           />
