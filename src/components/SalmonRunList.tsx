@@ -12,6 +12,7 @@ import { PrevArrow } from "./PrevArrow";
 import { MapRender } from "./MapRender";
 import { useSplatoonLocale } from "../store/use-locale";
 import { animated, useSpring, useTransition } from "react-spring";
+import { SpecialStageRender } from "./SpecialStageRender";
 
 export const SalmonRunList: FC<{
   salmons: SalmonRunInfo[];
@@ -64,10 +65,32 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
     ),
   }));
 
+  const grillStage = {
+    id: "Griller",
+    renderItem: (
+      <SpecialStageRender
+        id={salmon.setting.coopStage.id}
+        mapName={salmon.setting.coopStage.name}
+        stage={"grill"}
+      />
+    ),
+  };
+
+  const goldrushStage = {
+    id: "Goldrush",
+    renderItem: (
+      <SpecialStageRender
+        id={salmon.setting.coopStage.id}
+        mapName={salmon.setting.coopStage.name}
+        stage={"goldrush"}
+      />
+    ),
+  };
+
   const { carouselFragment, slideToPrevItem, slideToNextItem, slideToItem } =
     useSpringCarousel({
       withLoop: true,
-      items: [mapItem, ...items],
+      items: [mapItem, ...items, grillStage, goldrushStage],
     });
 
   const [animationStyle] = useSpring(
