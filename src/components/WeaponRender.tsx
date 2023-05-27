@@ -105,7 +105,9 @@ export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
           <img
             key={monster}
             src={"images/boses/" + monster + "_Icon.webp"}
-            className={"h-14 w-14 justify-center object-cover hover:scale-125"}
+            className={
+              "mx-auto h-14 w-14 justify-center object-cover hover:scale-125"
+            }
             alt={monster}
           />
         );
