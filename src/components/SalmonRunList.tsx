@@ -13,6 +13,7 @@ import { MapRender } from "./MapRender";
 import { useSplatoonLocale } from "../store/use-locale";
 import { animated, useSpring, useTransition } from "react-spring";
 import { SpecialStageRender } from "./SpecialStageRender";
+import { normalizeMapName } from "../utils/normalize-map-name";
 
 export const SalmonRunList: FC<{
   salmons: SalmonRunInfo[];
@@ -41,6 +42,13 @@ type SalmonRunProps = {
   index: number;
 };
 
+const maps = [
+  "gone_fission_hydroplant",
+  "sockeye_station",
+  "spawning_grounds",
+  "grill_marooner's_bay",
+];
+
 export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
   const { page, setPage } = usePage();
   const locale = useSplatoonLocale((state) => state.locale);
@@ -55,7 +63,7 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
       />
     ),
   };
-  const items = salmon.setting.weapons.map((w) => ({
+  const weaponItems = salmon.setting.weapons.map((w) => ({
     id: w.name,
     renderItem: (
       <WeaponRender
@@ -87,10 +95,14 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
     ),
   };
 
+  const map = normalizeMapName(salmon.setting.coopStage.name);
+
   const { carouselFragment, slideToPrevItem, slideToNextItem, slideToItem } =
     useSpringCarousel({
       withLoop: true,
-      items: [mapItem, ...items, grillStage, goldrushStage],
+      items: maps.includes(map)
+        ? [mapItem, ...weaponItems, grillStage, goldrushStage]
+        : [mapItem, ...weaponItems],
     });
 
   const [animationStyle] = useSpring(

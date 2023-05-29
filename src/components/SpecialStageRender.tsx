@@ -2,6 +2,7 @@ import type { FC } from "react";
 import React from "react";
 import { shallow } from "zustand/shallow";
 import { useSplatoonLocale } from "../store/use-locale";
+import { MapName, normalizeMapName } from "../utils/normalize-map-name";
 
 export interface SpecialStageRenderProps {
   id: string;
@@ -10,12 +11,6 @@ export interface SpecialStageRenderProps {
 }
 
 export type YoutubeTimeInfo = Record<MapName, number>;
-
-type MapName =
-  | "gone_fission_hydroplant"
-  | "sockeye_station"
-  | "spawning_grounds"
-  | "grill_marooner's_bay";
 
 export type YoutubeInfo = Record<
   "grill" | "goldrush",
@@ -46,7 +41,8 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
 }) => {
   const locale = useSplatoonLocale((state) => state.locale, shallow);
 
-  const infoKey = mapName.toLowerCase().replaceAll(" ", "_") as MapName;
+  const infoKey = normalizeMapName(mapName);
+
   return (
     <div
       className={
