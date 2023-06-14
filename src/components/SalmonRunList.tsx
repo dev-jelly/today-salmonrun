@@ -11,7 +11,7 @@ import { NextArrow } from "./NextArrow";
 import { PrevArrow } from "./PrevArrow";
 import { MapRender } from "./MapRender";
 import { useSplatoonLocale } from "../store/use-locale";
-import { animated, useSpring, useTransition } from "react-spring";
+import { animated, useSpring } from "react-spring";
 import { SpecialStageRender } from "./SpecialStageRender";
 import { normalizeMapName } from "../utils/normalize-map-name";
 

@@ -5,8 +5,7 @@ export type WeaponInfo = {
     warning: string;
   };
 };
-
-export const weaponInfos: WeaponInfo = {
+export const weaponInfos = {
   ".52 Gal": {
     monster: `작성 필요`,
     walkthrough: `작성 필요`,
@@ -141,8 +140,8 @@ export const weaponInfos: WeaponInfo = {
   },
   "Sploosh-o-matic": {
     monster: `작성 필요`,
-    walkthrough: `작성 필요`,
-    warning: `작성 필요`,
+    walkthrough: `스플랫 슈터와 함께 타워, 철구 담당입니다. 조무래기가 너무 많다면 무조건 스페셜을 써서 잡으세요. 들어갔다가 죽는게 훠얼씬 손해입니다. 여유 있을 면 조무래기 정리, 기둥도 설치되면 바로 잡아주세요.`,
+    warning: `볼드 마커로는 폭탄을 기본적으로 처리하기 힘듭니다. 기동성이 좋은만큼 팀내에서 많은 일을 해내야 합니다`,
   },
   "Dark Tetra Dualies": {
     monster: `all`,
