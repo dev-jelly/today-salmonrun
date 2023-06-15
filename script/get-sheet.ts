@@ -59,7 +59,7 @@ function generateWeaponVariables(
   walkthroughs: string[],
   warnings: string[]
 ) {
-  let variables = "export const weaponInfos = { ";
+  let variables = "export const weaponInfos: WeaponInfo = { ";
   let weaponInfos = [];
   for (let i = 0; i < weapons.length; i++) {
     if (!weapons[i].toString()) break;
@@ -79,8 +79,16 @@ function generateWeaponVariables(
   ) {
     return `"${weapon.toString().replace(/"/g, '\\"')}":  {
           "monster": \`${monster.toString().replace(/"/g, '\\"')}\`,
-          "walkthrough": \`${walkthrough.toString().replace(/"/g, '\\"')}\`,
-          "warning": \`${warning.toString().replace(/"/g, '\\"')}\`
+          "walkthrough": \`${walkthrough
+            .toString()
+            .trim()
+            .replaceAll("\n", "<br />")
+            .replace(/"/g, '\\"')}\`,
+          "warning": \`${warning
+            .toString()
+            .trim()
+            .replaceAll("\n", "<br />")
+            .replace(/"/g, '\\"')}\`
       }
       `;
   }

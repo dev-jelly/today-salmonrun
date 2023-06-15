@@ -76,7 +76,9 @@ const WarningRender: FC<{ warning: string }> = ({
       }
     >
       <h2 className={"text-center text-orange-400"}>{"{유의할 점}"}</h2>
-      <div className={`p-2 text-sm ${textClass}`}>{warning ?? "없음"}</div>
+      <div className={`prose break-normal p-2 text-sm text-white ${textClass}`}>
+        {warning ?? "작성필요"}
+      </div>
     </div>
   );
 };
@@ -98,8 +100,10 @@ export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
 
   const monsters = monster.split(",");
 
+  const className = monsters.length < 5 ? " grid-cols-2" : " grid-cols-3";
+
   return (
-    <div className={"grid grid-cols-2 items-center gap-2 "}>
+    <div className={`grid grid-flow-row-dense items-center gap-2 ${className}`}>
       {monsters.map((monster) => {
         return (
           <img
