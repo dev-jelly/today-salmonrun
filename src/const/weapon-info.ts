@@ -6,17 +6,17 @@
   };
 };
 export const weaponInfos: WeaponInfo = { ".52 Gal":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `all`,
+          "walkthrough": `연사력과 정밀도가 떨어지지만, 연어들은 크기가 크기 때문에 수월하게 연어들을 상대할 수 있다.`,
+          "warning": `전반적으로 능력치가 다 좋은 무기이지만, 한발한발이 잉크를 많이 사용하므로 꼭 적절하게 필요한 만큼 발사하는 편이 좋다.`
       }
       , ".96 Gal":  {
-          "monster": `all`,
-          "walkthrough": `없음`,
-          "warning": `없음`
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Fish_Stick`,
+          "walkthrough": `화력이 좋지만 슈터중 연사력이 최악`,
+          "warning": `화력이 좋지만 슈터중 연사력이 최악이다. 이로 칠 능력도 좋지 않기 때문에 다이버등을 상대할 때 조심하자.`
       }
       , "Bamboozler 14 Mk I":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel`,
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
           "walkthrough": `폭탄 : 꽤 먼 거리에 서도 세로베기로<br />원턴킬! 원턴킬! 원턴킬! 원턴킬! 원턴킬!<br />박쥐 : 착 달라붙어서 세로베기 후 비비면 원털킨!<br />빛파리(번외):<br />연어들이 오는 길목 에 버티고 있으면 편하게 정리가능 합니다.<br />타워 : 폭탄 던지기`,
           "warning": `없음`
       }
@@ -181,9 +181,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `타워나 기둥 같은 대형 몬스터는 우선적으로 처리해야 한다.`
       }
       , "Splat Roller":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Steel_Eel,Big_Shot,Slammin_Lid`,
+          "walkthrough": `전반적인 조무래기 연어들은 다 상대하기 좋다!`,
+          "warning": `폭탄을 잡기가 어려운 편. 세로 스윙 2번으로 잡을 수 있지만 타이밍을 잘 맞춰야합니다`
       }
       , "Splat Dualies":  {
           "monster": ``,
