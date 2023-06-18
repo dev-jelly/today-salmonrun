@@ -28,7 +28,12 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
           <WarningRender warning={weaponInfos[name]?.warning} />
           <div className="throughout w-30  h-full rounded border border-white p-2 outline-1 outline-white">
             <h2 className={"text-center text-orange-400"}>{"{상대법}"}</h2>
-            <p className={"p-2 text-sm"}>{weaponInfos[name]?.walkthrough}</p>
+            <p
+              className={"p-2 text-sm"}
+              dangerouslySetInnerHTML={{
+                __html: weaponInfos[name]?.walkthrough ?? "작성필요",
+              }}
+            ></p>
           </div>
         </div>
       </div>
@@ -76,9 +81,12 @@ const WarningRender: FC<{ warning: string }> = ({
       }
     >
       <h2 className={"text-center text-orange-400"}>{"{유의할 점}"}</h2>
-      <div className={`prose break-normal p-2 text-sm text-white ${textClass}`}>
-        {warning ?? "작성필요"}
-      </div>
+      <div
+        className={`prose break-normal p-2 text-sm text-white ${textClass}`}
+        dangerouslySetInnerHTML={{
+          __html: warning ?? "작성필요",
+        }}
+      ></div>
     </div>
   );
 };

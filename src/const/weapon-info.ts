@@ -17,8 +17,8 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Bamboozler 14 Mk I":  {
           "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `폭탄 : 꽤 먼 거리에 서도 세로베기로<br />원턴킬! 원턴킬! 원턴킬! 원턴킬! 원턴킬!<br />박쥐 : 착 달라붙어서 세로베기 후 비비면 원털킨!<br />빛파리(번외):<br />연어들이 오는 길목 에 버티고 있으면 편하게 정리가능 합니다.<br />타워 : 폭탄 던지기`,
-          "warning": `없음`
+          "walkthrough": `박쥐는 탄을 못맞췄다면 차징 연사로 킬이 가능<br />폭탄은 풀차지 두방`,
+          "warning": `차저이지만 관통성능이 없습니다<br />차징 없이 한방인 연어들은 외워두는 게 좋습니다 (꼬마연어, 타워의 냄비, 연어콥터 상자 등)`
       }
       , "H-3 Nozzlenose":  {
           "monster": `작성 필요`,
@@ -147,13 +147,13 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Splash-o-matic":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
+          "walkthrough": `뭐든 지 할 수 있는 무기`,
           "warning": `없음`
       }
       , "Goo Tuber":  {
           "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `타워 : 웬만해선 폭탄 던지기 <br />나머지는 딱히 의식한 건 없음`,
-          "warning": `없음`
+          "walkthrough": `잉크 효율이 좋은 무기, 논차징이 총 데미지 대비 잉크 효율은 더 좋습니다<br />빛파리 때는 차징으로 빛파리를 노려주세요`,
+          "warning": `논차지 상태가 잉크 효율은 더 좋지만, 관통성능이 없으니 적절하게 번갈아가면서 사용해주세요.`
       }
       , "Classic Squiffer":  {
           "monster": `타워 제외 전부`,
@@ -172,8 +172,8 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Dapple Dualies":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "walkthrough": `초당 데미지가 높은 편<br />사정거리가 짧은 것 외에는 전반적으로 좋은 무기`,
+          "warning": `박쥐의 탄알을 공격하기가 어려운 편`
       }
       , "Splattershot Nova":  {
           "monster": `all`,
@@ -290,5 +290,10 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "monster": `작성 필요`,
           "walkthrough": `작성 필요`,
           "warning": `작성 필요`
+      }
+      , "Painbrush":  {
+          "monster": `Fish_Stick,Stinger,Steel_Eel,Flipper_Flopper,Slammin_Lid`,
+          "walkthrough": `데미지가 높아 대량의 연어를 빠르게 처리할 수 있다. 조무래기는 살짝 위를 칠하는 느낌으로!`,
+          "warning": `롤러와 다르게, 밀 때 잉크 사용량은 속도에 관계없이 똑같이 소모한다<br />한번 휘두를 때 속도가 매우 느리고 이동도 어려운 편이기 때문에 조심하자<br />폭탄을 던지면 5번 정도 밖에 휘두룰 수 없어, 잉크 소모량에 주의하자!`
       }
       };
