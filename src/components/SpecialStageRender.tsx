@@ -38,8 +38,8 @@ const youtubeInfo: YoutubeInfo = {
       url: "https://youtu.be/HyY0Dqv1Iwg?t=",
     },
     "jammin'_salmon_junction": {
-      time: 0,
-      url: "",
+      time: 261,
+      url: "https://www.youtube.com/watch?v=xd9JqbZ5gmk",
     },
   },
   goldrush: {
@@ -60,8 +60,8 @@ const youtubeInfo: YoutubeInfo = {
       url: "https://youtu.be/1vmWeYzyTqQ?t=",
     },
     "jammin'_salmon_junction": {
-      time: 0,
-      url: "",
+      time: 15,
+      url: "https://www.youtube.com/watch?v=xd9JqbZ5gmk",
     },
   },
 };
