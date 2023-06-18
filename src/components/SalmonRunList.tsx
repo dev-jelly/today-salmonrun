@@ -46,7 +46,7 @@ const maps = [
   "gone_fission_hydroplant",
   "sockeye_station",
   "spawning_grounds",
-  "grill_marooner's_bay",
+  "marooner's_bay",
 ];
 
 export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {

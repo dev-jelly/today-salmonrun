@@ -10,27 +10,59 @@ export interface SpecialStageRenderProps {
   stage: "grill" | "goldrush";
 }
 
-export type YoutubeTimeInfo = Record<MapName, number>;
-
-export type YoutubeInfo = Record<
-  "grill" | "goldrush",
-  Omit<YoutubeTimeInfo, "url"> & { url: string }
+export type YoutubeTimeInfo = Record<
+  MapName,
+  {
+    time: number;
+    url: string;
+  }
 >;
 
+export type YoutubeInfo = Record<"grill" | "goldrush", YoutubeTimeInfo>;
 const youtubeInfo: YoutubeInfo = {
   grill: {
-    url: "https://youtu.be/HyY0Dqv1Iwg?t=",
-    gone_fission_hydroplant: 186,
-    sockeye_station: 76,
-    spawning_grounds: 120,
-    "grill_marooner's_bay": 145,
+    gone_fission_hydroplant: {
+      time: 186,
+      url: "https://youtu.be/HyY0Dqv1Iwg?t=",
+    },
+    sockeye_station: {
+      time: 76,
+      url: "https://youtu.be/HyY0Dqv1Iwg?t=",
+    },
+    spawning_grounds: {
+      time: 120,
+      url: "https://youtu.be/HyY0Dqv1Iwg?t=",
+    },
+    "marooner's_bay": {
+      time: 145,
+      url: "https://youtu.be/HyY0Dqv1Iwg?t=",
+    },
+    "jammin'_salmon_junction": {
+      time: 0,
+      url: "",
+    },
   },
   goldrush: {
-    url: "https://youtu.be/1vmWeYzyTqQ?t=",
-    gone_fission_hydroplant: 356,
-    sockeye_station: 705,
-    spawning_grounds: 933,
-    "grill_marooner's_bay": 1115,
+    gone_fission_hydroplant: {
+      time: 356,
+      url: "https://youtu.be/1vmWeYzyTqQ?t=",
+    },
+    sockeye_station: {
+      time: 705,
+      url: "https://youtu.be/1vmWeYzyTqQ?t=",
+    },
+    spawning_grounds: {
+      time: 933,
+      url: "https://youtu.be/1vmWeYzyTqQ?t=",
+    },
+    "marooner's_bay": {
+      time: 1115,
+      url: "https://youtu.be/1vmWeYzyTqQ?t=",
+    },
+    "jammin'_salmon_junction": {
+      time: 0,
+      url: "",
+    },
   },
 };
 
@@ -57,11 +89,11 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
         />
         <h2
           className={
-            "text-md flex -translate-y-1/2 items-center rounded-md bg-black px-8 py-4 sm:text-xl md:text-2xl"
+            "flex min-w-fit -translate-y-12 items-center rounded-md bg-black px-8 py-4 text-base sm:text-xl md:text-xl"
           }
         >
           <a
-            href={`${youtubeInfo[stage].url}${youtubeInfo[stage][infoKey]}`}
+            href={`${youtubeInfo[stage][infoKey].url}${youtubeInfo[stage][infoKey].time}`}
             target={"_blank"}
           >
             <img

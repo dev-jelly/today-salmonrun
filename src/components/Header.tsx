@@ -1,7 +1,8 @@
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { usePage } from "../store/use-page";
+import { GithubIcon } from "./icons/GithubIcon";
 
 const navigation = [
   { name: "Now", href: 0 },
@@ -26,6 +27,14 @@ export default function Header() {
           </a>
         </div>
         <div className="flex lg:hidden">
+          <a
+            href={"https://github.com/dev-jelly/today-salmonrun"}
+            className={
+              "mr-2 flex cursor-pointer justify-center fill-black text-center hover:fill-gray-700"
+            }
+          >
+            <GithubIcon />
+          </a>
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
@@ -51,6 +60,14 @@ export default function Header() {
               {item.name}
             </a>
           ))}
+          <a
+            href={"https://github.com/dev-jelly/today-salmonrun"}
+            className={
+              "flex cursor-pointer justify-center fill-white text-center hover:fill-gray-700"
+            }
+          >
+            <GithubIcon />
+          </a>
         </div>
       </nav>
       <Transition.Root show={mobileMenuOpen} as={Fragment}>

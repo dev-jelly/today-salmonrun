@@ -72,7 +72,7 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Splatana Wiper":  {
           "monster": `all`,
-          "walkthrough": `사거리와 위력이 낮은 와이퍼. 다루기 어렵지만, 모든 연어에 대응할 수 있다.`,
+          "walkthrough": `사거리와 위력이 낮은 와이퍼. 다루기 어렵지만, 모든 연어에 대응할 수 있다.<br />가로베기는 빠르게 움직이거나, 작은연어들을 빠르게 처리할 때 사용하면 좋습니다<br />차징을 하여 세로 베기를 하면 굉장히 높은 데미지를 가지며 관통 공격이 가능`,
           "warning": `없음`
       }
       , "Rapid Blaster":  {
@@ -273,8 +273,8 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Aerospray MG":  {
           "monster": `all`,
-          "walkthrough": `전부 다 무난함`,
-          "warning": `다같이 조무래기 정리하기. 타워 나오면 잡으러 가기.<br />데미지가 약하지만 연사력이 높고, 칩 성능이 좋은 무기입 니다. 이 점을 살려 거물연어에 대한 살상력은 다른 무기들 이 더 좋으니 조무래기 정리에 힘을 싣는게 좋겠습니다.`
+          "walkthrough": `데미지가 약하지만 연사력이 높고, 칠 성능이 좋은 무기입 니다. 이 점을 살려 거물연어에 대한 살상력은 다른 무기들 이 더 좋으니 조무래기 정리에 힘을 싣는게 좋겠습니다.`,
+          "warning": `박쥐의 탄알을 노리거나 폭탄을 잡기에는 사거리 짧아서 어려울 수 있습니다`
       }
       , "Hydra Splatling":  {
           "monster": `all`,

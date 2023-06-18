@@ -5,4 +5,5 @@ export type MapName =
   | "gone_fission_hydroplant"
   | "sockeye_station"
   | "spawning_grounds"
-  | "grill_marooner's_bay";
+  | "marooner's_bay"
+  | "jammin'_salmon_junction";
