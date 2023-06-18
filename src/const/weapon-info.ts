@@ -73,26 +73,26 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       , "Splatana Wiper":  {
           "monster": `all`,
           "walkthrough": `사거리와 위력이 낮은 와이퍼. 다루기 어렵지만, 모든 연어에 대응할 수 있다.<br />가로베기는 빠르게 움직이거나, 작은연어들을 빠르게 처리할 때 사용하면 좋습니다<br />차징을 하여 세로 베기를 하면 굉장히 높은 데미지를 가지며 관통 공격이 가능`,
-          "warning": `없음`
+          "warning": `전방위로 활동하면서 팀을 돕자!`
       }
       , "Rapid Blaster":  {
           "monster": `Fish_Stick,Stinger`,
-          "walkthrough": `1발의 위력이 낮고 폭발 범위가 조금 좁지만 사거리와 연사력이 좋은 블래스터. 조무래기 처리는 조금 약하므로 사거리를 활용하자. 타워는 쉽게 쓰러뜨릴 수 있고, 기둥은 아래에서 처리할 수 있다. 타워나 철구슬 등 해안 근처에 머무는 거대 몬스터를 원거리에서 공격할 수 있다.`,
+          "walkthrough": `1발의 위력이 낮고 폭발 범위가 조금 좁지만 사거리와 연사력이 좋은 블래스터. <br />조무래기 처리는 조금 약하므로 사거리를 활용하자. 타워는 쉽게 쓰러뜨릴 수 있고, 기둥은 아래에서 처리할 수 있다. <br />타워나 철구슬 등 해안 근처에 머무는 거대 몬스터를 원거리에서 공격할 수 있다. 박쥐는 총알을 카운터 하는 방향으로 처리하자`,
           "warning": `큰물고기는 모두 처리할 수 있지만, 다이버 색칠에는 약하다.`
       }
       , "Random":  {
           "monster": `?`,
           "walkthrough": `?`,
-          "warning": `없음`
+          "warning": `?`
       }
       , "Range Blaster":  {
-          "monster": `Fish_Stick,Stinger`,
-          "walkthrough": `딱히 의식해야할 건 없음`,
-          "warning": `없음`
+          "monster": `Fish_Stick,Stinger,Steelhead`,
+          "walkthrough": `사거리가 길어서 타워를 상대하기 좋습니다<br />기둥은 연어가 돌 때 반 시계방향(오른쪽)을 노리자<br />폭탄 2방`,
+          "warning": `연사력이 안좋다 보니 빠른 색칠이 필요할때는 힘듭니다.<br />경직때문에 두더지에게도 잡아먹히기 쉬우니 조심합시다<br />폭탄 처리가 쉬운편이지만 2방이 필요하기 때문에 1방을 맞추고 빠르게 2방을 쏴야 합니다!`
       }
       , "E-liter 4K":  {
           "monster": `Drizzler,Steelhead,Steel_Eel`,
-          "walkthrough": `타워 :<br />푹탄 던지기(3번) 혹은 스페셜 갈기기<br />나머지는 막히 의식할 건 없음`,
+          "walkthrough": `타워: 폭탄 던지기(3번) 혹은 스페셜 갈기기<br />나머지는 막히 의식할 건 없음`,
           "warning": `배 안쪽으로 들어오는 뱀, 박쥐, 폭탄만 빠르게 정리해 줘도 1인분입니다. 또한, 긴 사거리를 동해 좌우로 날아드는 박쥐의 로켓도 의식하면서 카운터 쳐줍시다.`
       }
       , "Unknown":  {
@@ -106,9 +106,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `없음`
       }
       , "Heavy Splatling":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Drizzler,Steelhead,Stinger,Fish_Stick,Big_Shot`,
+          "walkthrough": `충전시간이 길지만 대부분의 거물을 원턴킬할 수 있습니다.`,
+          "warning": `충전시간이 어느정도 필요하므로 안전한 곳에서 차징하면서 사용하세요<br />잉크사용량도 같이 주의!`
       }
       , "Slosher":  {
           "monster": `Steelhead`,
@@ -147,8 +147,8 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Splash-o-matic":  {
           "monster": `all`,
-          "walkthrough": `뭐든 지 할 수 있는 무기`,
-          "warning": `없음`
+          "walkthrough": `무엇이든 지 할 수 있는 무기`,
+          "warning": `전방위로 활동하면서 팀을 돕자!`
       }
       , "Goo Tuber":  {
           "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
@@ -201,9 +201,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": ``
       }
       , "Splat Charger":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `타워: 그냥 폭탄 던지기, 나머지는 의식할 거 없음`,
-          "warning": `없음`
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Slammin_Lid`,
+          "walkthrough": `뱀이나 덩치연어에 한방정도 쏴주는 것 만으로 슈터들의 부담을 줄여줄 수 있습니다.<br />일자로 들어오는 연어들이나 거물연어 위주로 상대합시다`,
+          "warning": `잉크효율이 좋은편은 아니니 항상 신경쓰면서 운용해야합니다.<br />풀차징시에는 5발 밖에 쏘지 못합니다`
       }
       , "Bloblobber":  {
           "monster": `all`,
@@ -227,9 +227,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `데미지가 좀 약하지만 매우 긴 사거리를 가진 무기입니다.<br />대부분의 타워는 외곽에 안 나가고도 정리할 수 있으므로　타워는 바로바로 정리해줍시다.<br />기둥은 설치 즉시 바로 잡아주세요.`
       }
       , "Carbon Roller":  {
-          "monster": `타워 제외 전부`,
-          "walkthrough": `타워 : 그냥 폭탄 던지세요.<br />폭탄 : 가까이서 세로베기 <br />2번 조무래기는 밀면 안되고 가로로 내려찍어야 합니다`,
-          "warning": `빛파리에서 작은연어들은 밀어서 죽일 수 있습니다`
+          "monster": `타워 및 폭탄 제외 전부`,
+          "walkthrough": `타워 : 그냥 폭탄 던지세요.<br />폭탄 : 가까이서 세로베기 2번 <br />빛파리에서 작은연어들은 밀어서 처리할 수 있습니다`,
+          "warning": `조무래기는 밀면 안되고 가로로 내려찍어야 합니다`
       }
       , "Tenta Brella":  {
           "monster": ``,
@@ -257,9 +257,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `알 컨테이너 주변으로 들어오는 뱀, 폭탄, 박쥐 정리하기, 차지 450데미지여서 날아가는 박쥐도 두방만에 정리가 가능합니다. 여유있을 때 철구습 잡는거 돕기`
       }
       , "Splat Brella":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel`,
-          "walkthrough": `타워:<br />그냥 폭탄 던지기<br />나머지는 의식할<br />건 없음`,
-          "warning": `파라셸터는 초근접 상태에서만 데미지가 준수하게 나오기<br />때문에 안쪽으로 들어오는 거물들을 위주로 잡아줘야 합니다<br />또한, 방어막을 펼친 상태에서 조무래기에 갖다대면 일반 연어들을 한꺼번에 정리할 수 있습니다. 철구슬 잡을 때 연어 정리하기 편합니다`
+          "monster": `Drizzler,Steelhead,Stinger`,
+          "walkthrough": `파라셸터는 초근접 상태에서만 데미지가 준수하게 나오기 때문에 안쪽으로 들어오는 거물들을 위주로 잡아줘야 합니다<br />타워: 그냥 폭탄 던지기, 나머지는 의식할 건 없음<br />기둥은 상대하기 어려우니 다른 무기에게 맡기거나 적절하게 스페셜을 사용해줍시다`,
+          "warning": `또한, 방어막을 펼친 상태에서 조무래기에 갖다대면 일반 연어들을 한꺼번에 정리할 수 있습니다. 철구슬 잡을 때 연어 정리하기 편합니다`
       }
       , "Inkbrush":  {
           "monster": `Fish_Stick,Stinger,Steel_Eel,Flipper_Flopper,Slammin_Lid`,
