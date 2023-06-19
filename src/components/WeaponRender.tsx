@@ -110,17 +110,27 @@ export const MonsterRender: FC<MonsterRenderProps> = ({ monster }) => {
 
   const monsters = monster.split(",");
 
-  const className = monsters.length < 5 ? " grid-cols-2" : " grid-cols-3";
+  const monsterSizeClassName =
+    monsters.length < 3 ? " mt-4 w-20 h-20" : " w-14 h-14";
+
+  const className =
+    monsters.length == 1
+      ? " grid-cols-1"
+      : monsters.length < 5
+      ? " grid-cols-2"
+      : " grid-cols-3";
 
   return (
-    <div className={`grid grid-flow-row-dense items-center gap-2 ${className}`}>
+    <div
+      className={`col-end-auto row-end-auto grid grid-flow-row-dense items-center justify-center gap-2 ${className}`}
+    >
       {monsters.map((monster) => {
         return (
           <img
             key={monster}
             src={"images/boses/" + monster + "_Icon.webp"}
             className={
-              "mx-auto h-14 w-14 justify-center object-cover hover:scale-125"
+              "mx-auto object-cover hover:scale-125" + monsterSizeClassName
             }
             alt={monster}
           />
