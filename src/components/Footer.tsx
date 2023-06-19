@@ -59,13 +59,13 @@ const SocialShare = () => {
       <h3 className={"text-center text-white"}>Share</h3>
       <div className="flex justify-center space-x-4 pt-2">
         <a href={twitterShareUrl} target="_blank" rel="noopener noreferrer">
-          <TwitterIcon className="h-6 w-6 fill-blue-500" />
+          <TwitterIcon className="h-6 w-6 fill-white hover:fill-gray-200" />
         </a>
         <a href={facebookShareUrl} target="_blank" rel="noopener noreferrer">
-          <FacebookIcon className="h-6 w-6 fill-blue-600" />
+          <FacebookIcon className="h-6 w-6 fill-white hover:fill-gray-200" />
         </a>
         <button onClick={copyLink}>
-          <LinkIcon className="h-6 w-6 fill-white" />
+          <LinkIcon className="h-6 w-6 fill-white hover:fill-gray-200" />
         </button>
       </div>
     </div>

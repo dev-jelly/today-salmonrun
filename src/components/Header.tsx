@@ -30,7 +30,7 @@ export default function Header() {
           <a
             href={"https://github.com/dev-jelly/today-salmonrun"}
             className={
-              "mr-2 flex cursor-pointer justify-center fill-black text-center hover:fill-gray-700"
+              "mr-2 flex cursor-pointer justify-center fill-white text-center hover:fill-gray-200"
             }
           >
             <GithubIcon />
@@ -63,7 +63,7 @@ export default function Header() {
           <a
             href={"https://github.com/dev-jelly/today-salmonrun"}
             className={
-              "flex cursor-pointer justify-center fill-white text-center hover:fill-gray-700"
+              "flex cursor-pointer justify-center fill-white text-center hover:fill-gray-200"
             }
           >
             <GithubIcon />
