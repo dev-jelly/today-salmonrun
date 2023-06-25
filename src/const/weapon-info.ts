@@ -21,32 +21,32 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `차저이지만 관통성능이 없습니다<br />차징 없이 한방인 연어들은 외워두는 게 좋습니다 (꼬마연어, 타워의 냄비, 연어콥터 상자 등)`
       }
       , "H-3 Nozzlenose":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Steelhead,Fish_Stick`,
+          "walkthrough": `L3 릴건과 비슷하지만, 길이가 좀더 길고, 칠성능과 잉크 효율이 좋습니다<br />흔들어 쏘면 타워를 3발 안에 죽일 수도 있습니다. <br />조무래기 상대에도 좋으니 흔들어 쏴보세요`,
+          "warning": `연사력이 살짝 떨어지고, 경직이 길다보니 한발한발 신중하게 쏘는 느낌으로 운용하세요<br />차징이 없는 차져라는 생각을 하시면 편합니다(그렇다고 너무 신중하게 쏘진 마세요..)<br />꼬마연어 상대는 어렵습니다`
       }
       , "L-3 Nozzlenose":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `all`,
+          "walkthrough": `3발씩 나가는 특수한 슈터. 발사 리듬을 미리미리 익혀두자. 데미지와 칠 모두 좋은 편`,
+          "warning": `너무 빨리 누르면 안나가니, 적절하게 누르자. 기둥은 우측을 공격하는 편이 좋음`
       }
       , "REEF-LUX 450":  {
-          "monster": `all`,
-          "walkthrough": `없음`,
-          "warning": `없음`
+          "monster": `Flipper_Flopper,Scrapper`,
+          "walkthrough": `칠 성능이 최강인 무기 트라이 스트링거와는 다르게 잉크속에서도 차징 유지가 됩니다.<br />차징을 안해도 초당 데미지는 높지만 집탄율이 떨어지기 때문에 다루기 어렵습니다<br />타워: 차지 없이 세로 쏘기<br />폭탄: 풀차지 두방<br />냄비 뚜껑: 그냥 쏴도 안닿는 건 아니지만, 바닥에 내린 뒤 올라타서 쏘는 게 좋습니다`,
+          "warning": `꼬마연어 상대가 쉽지 않으니 조심하자`
       }
       , "N-ZAP '85":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `타워 : 잡으러 가지 맡고 무조건 폭탄 던지기  던지기  던지기  던지기 <br />폭탄 : 풀 차지 두 방 나머지는 의식할 거 없음`,
-          "warning": `없음`
+          "monster": `all`,
+          "walkthrough": `무엇이든 지 할 수 있는 무기`,
+          "warning": `좋은 무기라도 너무 생각 없이 사용하면 잉크 소비가 클 수 있으니 항상 잉크 사용량을 신경쓰면 팀원들을 돕자!`
       }
       , "Rapid Blaster Pro":  {
-          "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `Fish_Stick,Stinger,Chinook`,
+          "walkthrough": `래피드 블래스터에 비해 데미지가 더 세다.<br />연사력이 낮고, 잉크소비량이 많지만 상대적으로 장거리인 블래스터.<br />폭탄은 2방`,
+          "warning": `박쥐의 총알을 맞추기는 쉬우나 그냥 잡기는 어려운 편`
       }
       , "Snipewriter 5H":  {
-          "monster": `작성 필요`,
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Fish_Stick`,
           "walkthrough": `작성 필요`,
           "warning": `작성 필요`
       }
