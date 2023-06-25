@@ -46,29 +46,29 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `박쥐의 총알을 맞추기는 쉬우나 그냥 잡기는 어려운 편`
       }
       , "Snipewriter 5H":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Fish_Stick`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Drizzler,Steelhead,Big_Shot,Fish_Stick,Stinger,Flipper_Flopper`,
+          "walkthrough": `관통 성능이 없는 차저. 타워는 논차지 한발로 한개씩 처리 가능<br />차징 시간이 긴편이지만 차지 후에 5발을 모두 맞출시 데미지는 1200으로,  모두 맞출 시 다이빙 전에 다이버를 처리할 수 있다.`,
+          "warning": `조무래기 연어에겐 절망적인 성능을 보여주니, 조심하고 거물 위주로 처리하자.`
       }
       , "Luna Blaster":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Stinger`,
+          "walkthrough": `사거리 짧지만 데미지가 높아 조무래기 처리에 좋다.<br />칠성능도 좋지만, 블래스터류 특성상 바닥칠이 좋지는 않습니다.`,
+          "warning": `주변 안전을 신경쓰면서 살짝 거리를 두어 사용해줍시다.`
       }
       , "Nautilus 47":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Fish_Stick,Scrapper`,
+          "walkthrough": `차징 유지가 되는 스피너, 충전량 상관 없이 사거리가 유지된다. 잉크 효율도 굉장히 좋은편`,
+          "warning": `차지 유지중에는 잉크 회복이 안되기 때문에 적절하게 잉크를 잘 모으면서 사용하자.<br />차지중에 폭탄을 던지면 손해이기 때문에 두더지와 어깨패드를 상대하기가 어려운편`
       }
       , "Dynamo Roller":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Steelhead,Steel_Eel`,
+          "walkthrough": `엄청난 데미지를 줄 수 있지만, 열악한 기동력을 가진 무기.<br />폭탄은 세로로 한방에 처리할 수 있다.<br />착지하고 있는 박쥐에 휘둘른뒤 밀기로 데미지를 줄 수도 있다.`,
+          "warning": `휘두르는 시간이 길어, 휘두르기도 전에 죽을 수 있으니, 미리미리 휘두르자<br />잉크관리가 어려운 편으로 폭탄을 던지는 건 팀에 맡기는 게 좋다.<br />타워등을 처리하기 어려우므로, 같은 팀에 다이나모 롤러가 있다면 미리미리 타워를 처리해주자.`
       }
       , "Dualie Squelchers":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 건 없음`,
-          "warning": `없음`
+          "walkthrough": `적당히 전반적으로 좋은 무기.<br />폭탄의 경우 한 턴안에 처리하는 게 어려울 수도 있음`,
+          "warning": `슬라이드후 경직이 적은 편이라 위급한 상황일때 쓰면 좋지만, 항상 잉크 사용량을 주의하자`
       }
       , "Splatana Wiper":  {
           "monster": `all`,
@@ -91,9 +91,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `연사력이 안좋다 보니 빠른 색칠이 필요할때는 힘듭니다.<br />경직때문에 두더지에게도 잡아먹히기 쉬우니 조심합시다<br />폭탄 처리가 쉬운편이지만 2방이 필요하기 때문에 1방을 맞추고 빠르게 2방을 쏴야 합니다!`
       }
       , "E-liter 4K":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel`,
-          "walkthrough": `타워: 폭탄 던지기(3번) 혹은 스페셜 갈기기<br />나머지는 막히 의식할 건 없음`,
-          "warning": `배 안쪽으로 들어오는 뱀, 박쥐, 폭탄만 빠르게 정리해 줘도 1인분입니다. 또한, 긴 사거리를 동해 좌우로 날아드는 박쥐의 로켓도 의식하면서 카운터 쳐줍시다.`
+          "monster": `타워, 어깨패드 제외 전부`,
+          "walkthrough": `풀 차지 시 데미지가 높고 관통성능이 있음.<br />타워: 폭탄 던지기(3번) 혹은 스페셜 갈기기`,
+          "warning": `반 차징의 경우 효율이 정말 안좋으니 되도록 풀차지를 해줍시다.<br />풀차징의 경우도 잉크 소모량이 매우 큰편이니 잉크 충전량은 꼭 신경쓰기!<br />배 안쪽으로 들어오는 뱀, 박쥐, 폭탄만 빠르게 정리해 줘도 1인분입니다. <br />또한, 긴 사거리를 동해 좌우로 날아드는 박쥐의 로켓도 의식하면서 카운터 쳐줍시다.`
       }
       , "Unknown":  {
           "monster": `?`,
@@ -101,9 +101,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `?`
       }
       , "Tri-Slosher":  {
-          "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `Steelhead,Flipper_Flopper`,
+          "walkthrough": `폭탄은 너무 가까이서 공격하면 몸통에 맞기 때문에 살짝 떨어져서 공격해야 함. 점프 쏘기 또는 곡사의 경우 조준이 흔들리기 쉬우니 자제합시다. <br />박쥐의 탄알도 빠르게 처리할 수 탄알을 노립시다`,
+          "warning": `다른 슬로셔와 달리 고지가 높은 곳에서 아래로 쏠 때 데미지 감쇠가 일어납니다. 모든 연어들에 대해서 너무 가까이서 쏠시 1차 데미지만 입기 때문에 3방향의 데미지를 모두 입히고 싶은 경우 살짝 떨어져서 쏘는 게 좋습니다`
       }
       , "Heavy Splatling":  {
           "monster": `Drizzler,Steelhead,Stinger,Fish_Stick,Big_Shot`,
@@ -122,18 +122,18 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Squeezer":  {
           "monster": ``,
-          "walkthrough": `1발째는 위력과 사거리는 있지만 잉크 효율이 좋지 않은 사격, 2발째부터는 위력과 사거리는 없지만 잉크 효율과 칠 성능이 좋은 사격이 가능한 슈터. 작은 연어 처리나 기둥 처리, 타워나 철구슬 등 해안 근처에 머물러 있는 거대 몬스터를 원거리에서 공격할 수 있다.`,
+          "walkthrough": `1발째는 세고, 사거리가 길지만 잉크 효율이 좋지 않은 사격, 2발째부터는 약하고 사거리는 짧지만 잉크 효율과 칠 성능이 좋은 사격이 가능한 슈터. 작은 연어 처리나 기둥 처리, 타워나 철구슬 등 해안 근처에 머물러 있는 거대 몬스터를 원거리에서 공격할 수 있다.`,
           "warning": `다이버 상대는 연사로 칠 하는 것이 좋다. 폭탄을 제외하고는 연사로 처리하자.`
       }
       , "Sploosh-o-matic":  {
-          "monster": `작성 필요`,
+          "monster": `폭탄 제외 전부`,
           "walkthrough": `스플랫 슈터와 함께 타워, 철구 담당입니다. 조무래기가 너무 많다면 무조건 스페셜을 써서 잡으세요. 들어갔다가 죽는게 훠얼씬 손해입니다. 여유 있을 면 조무래기 정리, 기둥도 설치되면 바로 잡아주세요.`,
-          "warning": `볼드 마커로는 폭탄을 기본적으로 처리하기 힘듭니다. 기동성이 좋은만큼 팀내에서 많은 일을 해내야 합니다`
+          "warning": `볼드 마커로는 폭탄을 기본적으로 처리하기 힘듭니다. 박쥐의 총알도 맞추기 힘든편입니다.<br />기동성이 좋은만큼 팀내에서 많은 일을 해내야 합니다.`
       }
       , "Dark Tetra Dualies":  {
           "monster": `all`,
-          "walkthrough": `전부 무난함`,
-          "warning": `기동성과 데미지 둘 다 챙긴 효자 무기입니다. 타워는 물론 칠 구슬이 나올 경우 바로 달려 가세요. 단,쿼드호퍼는 구르기 역경직이 쎄기 때문에 해안가에 조무래기 연어가 많은 곳에서 구르면 안됩니다.`
+          "walkthrough": `전부 무난한편.<br />경직중에도 폭탄은 던질 수 있으니, 잉크가 있다면 경직중에도 두더지등을 처리할 수 있습니다.`,
+          "warning": `기동성과 데미지 둘 다 챙긴 효자 무기입니다. 타워는 물론 철 구슬이 나올 경우 바로 달려 가세요. 단,쿼드호퍼는 구르기 역경직이 쎄기 때문에 해안가에 조무래기 연어가 많은 곳에서 구르면 안됩니다.`
       }
       , "Splatana Stamper":  {
           "monster": `all`,
@@ -213,8 +213,8 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       , "Big Swig Roller":  {
           "monster": `쉽게 잘 잡는 거물은 없고
 조무래기 킬러`,
-          "walkthrough": `폭탄 :<br />세로 + 가로 or<br />세로 + 세로 (거리가 멀 경우 세로 x 3)<br />나머지는 의식해야할 건 없음.`,
-          "warning": `없음`
+          "walkthrough": `칠에 특화된 롤러. 세로 휘두르기로 연어 콥터 처리가 어느정도 가능<br />폭탄 : 세로 + 가로 or 세로 + 세로 (거리가 멀 경우 세로 x 3)`,
+          "warning": `덩치연어의 경우 많이 밀려날 수 있으니 주의`
       }
       , "Explosher":  {
           "monster": `all`,
