@@ -25,6 +25,11 @@ export const Footer: FC<FooterProps> = () => {
           {". "}
           This website is not affiliated with Nintendo
         </p>
+        <p className={"text-center text-lime-300"}>
+          <a href="https://github.com/dev-jelly/today-salmonrun/blob/main/FAQ.md">
+            자주 물을 질문
+          </a>
+        </p>
       </div>
 
       <SocialShare />
