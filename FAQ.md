@@ -10,3 +10,8 @@
 
 ## 정보가 상이하게 표시되는 것 같아요.
 서버 문제 혹은 빅런 등 다른 이벤트가 진행중일 수 있습니다. 이런 경우엔 이해 부탁드려요.
+
+## 참고한 사이트
+- [카에 유튜브](https://www.youtube.com/channel/UCqlt6Ge5clxOTKvnCvpVQCQ)
+- [위키위키 스플래툰](https://wikiwiki.jp/splatoon3mix/%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%A9%E3%83%B3/%E3%83%96%E3%82%AD%E5%88%A5%E7%AB%8B%E3%81%A1%E5%9B%9E%E3%82%8A/%E3%83%96%E3%82%AD%E5%88%A5%E7%AB%8B%E3%81%A1%E5%9B%9E%E3%82%8A%E5%80%8B%E5%88%A5%E8%A7%A3%E8%AA%AC)
+- [Game8 스플래툰](https://game8.co/games/Splatoon-3) 
