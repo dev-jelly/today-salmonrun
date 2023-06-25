@@ -52,7 +52,7 @@ const SocialShare = () => {
     navigator.clipboard
       .writeText(url)
       .then(() => {
-        alert("Link copied to clipboard");
+        alert("링크가 복사되었습니다!");
       })
       .catch((err) => {
         console.error("Could not copy text: ", err);
