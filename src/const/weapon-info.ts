@@ -116,14 +116,14 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `잉크 효율성을 유의하면서 게임을 진행하세요. 슬로셔는 한 번에 많은 잉크를 사용하므로 이 점을 주의해야 합니다.<br />폭탄 처리는 슬로셔가 잘하지만, 기둥이나 타워 처리는 약간 시간이 걸립니다. 이 점을 고려하여 전략을 세우세요.`
       }
       , "Flingza Roller":  {
-          "monster": ``,
-          "walkthrough": ``,
-          "warning": ``
+          "monster": `타워 제외 전부`,
+          "walkthrough": `조무래기 처리시에는 가로와 밀기, 거물 상대로는 세로로 상대하는 게 효율이 좋은편. 다이버등에 의해 급하기 피해야 할 때는 밀기로 피하는 것도 좋다`,
+          "warning": `칠성능이 좋은 편은 아니기 때문에 생각보다 다이버 상대가 힘든 편`
       }
       , "Squeezer":  {
-          "monster": ``,
+          "monster": `all`,
           "walkthrough": `1발째는 세고, 사거리가 길지만 잉크 효율이 좋지 않은 사격, 2발째부터는 약하고 사거리는 짧지만 잉크 효율과 칠 성능이 좋은 사격이 가능한 슈터. 작은 연어 처리나 기둥 처리, 타워나 철구슬 등 해안 근처에 머물러 있는 거대 몬스터를 원거리에서 공격할 수 있다.`,
-          "warning": `다이버 상대는 연사로 칠 하는 것이 좋다. 폭탄을 제외하고는 연사로 처리하자.`
+          "warning": `다이버 상대는 연사로 칠 하는 것이 좋다. 폭탄을 제외하고는 연사로 처리하자. <br />평소에 끊어쏘기와 연사의 차이를 이해하고 연습하자.`
       }
       , "Sploosh-o-matic":  {
           "monster": `폭탄 제외 전부`,
@@ -137,13 +137,13 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Splatana Stamper":  {
           "monster": `all`,
-          "walkthrough": `타워 :<br />검기로도 냄비 3개씩 걷어낼 수 있다 나머지는 딱히 의식할 건 없음`,
-          "warning": `없음`
+          "walkthrough": `가로베기로는 조무래기나 칠을 할 때 좋다<br />세로베기는 상당히 높은데미지로 거물 상대나 체력이 높은 상대로 유용함<br />타워 :<br />검기로도 냄비 3개씩 걷어낼 수 있다 나머지는 딱히 의식할 건 없음`,
+          "warning": `덩치 연어의 경우 효율을 생각해서 차징하여 세로 베기 공격하는 게 좋다.`
       }
       , "Splattershot Jr.":  {
-          "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `폭탄 제외 전부`,
+          "walkthrough": `칠 관련 하여 최강 효율의 무기<br />전반적으로 좋은 무기이지만 탄 퍼짐이 큰 편이다.<br />연사를 멈췄다 쏘면 잠깐동안 정밀도가 올라간다`,
+          "warning": `정밀도가 떨어지기 때문에, 폭탄이나 박쥐 총알 등은 맞추기 어렵다<br />배틀에서 처럼 전용 10%의 전용 잉크탱크가 없기 때문에, 배틀에서의 새싹슈터를 생각해서 쓴다면 잉크가 부족할 수 있다.`
       }
       , "Splash-o-matic":  {
           "monster": `all`,
@@ -156,19 +156,19 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `논차지 상태가 잉크 효율은 더 좋지만, 관통성능이 없으니 적절하게 번갈아가면서 사용해주세요.`
       }
       , "Classic Squiffer":  {
-          "monster": `타워 제외 전부`,
-          "walkthrough": `타워:<br />멀리서 폭탄 던지기 혹은 스페셜 쓰기<br />나머지는 딱히 의식할 건 없음`,
-          "warning": `없음`
+          "monster": `all`,
+          "walkthrough": `전반적으로 다루기 쉬운 차저. 사정거리가 다른 차저에 비해 짧은 것만 주의하자<br />타워:<br />멀리서 폭탄 던지기 혹은 스페셜 쓰기`,
+          "warning": `일단 차저이기 때문에 꼬마연어등을 처리하기는 어려우니 조심하자`
       }
       , "Sloshing Machine":  {
           "monster": `타워 제외 전부`,
-          "walkthrough": `타워 :<br />폭탄 or 스페셜<br />기둥 :<br />돌아가는 방향<br />역 방향으로 탄 쏘면 2방에 정리<br />가능<br />나머지는 의식할<br />건 없음`,
-          "warning": `세탁기는 직격 대미지가 준수하고 사거리도 꽤 립니다.<br />조무래기 정리가 좀 힘듣기 때문에 둘러쌓이지 않게 조심하 면서 뱀, 폭탄, 박쥐 위주로 잡는걸 의식합시다.`
+          "walkthrough": `세탁기는 직격 대미지가 준수하고 사거리도 꽤 깁니다.<br />타워 : 폭탄 or 스페셜<br />기둥 : 돌아가는 방향 역 방향으로 탄 쏘면 2방에 정리 가능`,
+          "warning": `사격 경직이 살짝 있기 때문에 조무래기 정리가 좀 힘들기 때문에 둘러쌓이지 않게 조심하면서 뱀, 폭탄, 박쥐 위주로 잡는걸 의식합시다.<br />소용돌이는 직격된 이후에는 사라지기 때문에, 조준 감각을 평소에 잘 익혀야합니다`
       }
       , "Undercover Brella":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Stinger,Steelhead`,
+          "walkthrough": `우산이 날라가진 않지만 우산자체에도 데미지가 있기 때문에, 일반 샷과 우산 콤보로 순간화력을 늘릴 수 있다.<br />냄비 뚜껑은 샷 3개와 우산 공격 1회로 섯 회수를 줄일 수 있다.`,
+          "warning": `다른 셸터와 마찬가지로 기둥 상대가 스파이 가젯 외의 다른 무기들이 잘 보조 해주자.`
       }
       , "Dapple Dualies":  {
           "monster": `all`,
@@ -178,12 +178,12 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       , "Splattershot Nova":  {
           "monster": `all`,
           "walkthrough": `연사력이나 칠 성능은 어느 정도 좋지만, 탄이 흔들리기 쉽고 위력이 낮은 중거리 슈터다. 일반 연어는 4발로 처치할 수 있다. 주로 작은 연어를 처리해가면서, 거물도 처리해 나가자. 타워나 철구슬과 같이 해안 근처 거물도 멀리서 처치 가능하다.`,
-          "warning": `타워나 기둥 같은 대형 몬스터는 우선적으로 처리해야 한다.`
+          "warning": `타워나 기둥 같은 대형 몬스터는 우선적으로 처리해야 한다. <br />정밀도가 떨어지는 걸 주의하고, 기본 사거리가 있으니 너무 연어에 다가가서 처리하지 말자.`
       }
       , "Splat Roller":  {
           "monster": `Steel_Eel,Big_Shot,Slammin_Lid`,
-          "walkthrough": `전반적인 조무래기 연어들은 다 상대하기 좋다!`,
-          "warning": `폭탄을 잡기가 어려운 편. 세로 스윙 2번으로 잡을 수 있지만 타이밍을 잘 맞춰야합니다`
+          "walkthrough": `전반적인 조무래기 연어들은 다 상대하기 좋다!<br />빛파리까지도 넉백 없이 처리가 가능하다.`,
+          "warning": `덩치 연어의 경우 가로 스윙을 섞어서 잡아주자.<br />폭탄을 잡기가 어려운 편. 세로 스윙 2번으로 잡을 수 있지만 타이밍을 잘 맞춰야합니다`
       }
       , "Splat Dualies":  {
           "monster": ``,
@@ -287,9 +287,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `없음`
       }
       , "Octobrush":  {
-          "monster": `작성 필요`,
-          "walkthrough": `작성 필요`,
-          "warning": `작성 필요`
+          "monster": `Fish_Stick,Stinger,Steel_Eel,Slammin_Lid`,
+          "walkthrough": `조무래기 처리에 강하다. 미리미리 잘 처리하자.<br />폭탄을 던지면 10회정도 밖에 휘두를 수 밖에 없기 때문에 폭탄 사용은 조심해서 하자`,
+          "warning": `잉크효율이 최악인 무기중 하나<br />조무래기 처리가 쉽지만 잉크소비가 심하기 때문에 잉크량에 주의하자.`
       }
       , "Painbrush":  {
           "monster": `Fish_Stick,Stinger,Steel_Eel,Flipper_Flopper,Slammin_Lid`,
