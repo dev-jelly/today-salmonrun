@@ -157,7 +157,7 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       }
       , "Classic Squiffer":  {
           "monster": `all`,
-          "walkthrough": `전반적으로 다루기 쉬운 차저. 사정거리가 다른 차저에 비해 짧은 것만 주의하자<br />타워:<br />멀리서 폭탄 던지기 혹은 스페셜 쓰기`,
+          "walkthrough": `전반적으로 다루기 쉬운 차저. 사정거리가 다른 차저에 비해 짧은 것만 주의하자<br />타워: 멀리서 폭탄 던지기 혹은 스페셜 쓰기`,
           "warning": `일단 차저이기 때문에 꼬마연어등을 처리하기는 어려우니 조심하자`
       }
       , "Sloshing Machine":  {
@@ -186,19 +186,19 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `덩치 연어의 경우 가로 스윙을 섞어서 잡아주자.<br />폭탄을 잡기가 어려운 편. 세로 스윙 2번으로 잡을 수 있지만 타이밍을 잘 맞춰야합니다`
       }
       , "Splat Dualies":  {
-          "monster": ``,
-          "walkthrough": `색칠, 연사력, 화력이 어느 정도 좋은 표준적인 매뉴버입니다. 적은 물론, 큰 적도 능숙하게 처리할 수 있는 만능 무기입니다. 적 처리나 타워, 기둥 처리를 우선적으로 수행하면 아군도 움직이기 쉬워질 것입니다.`,
-          "warning": `없음`
+          "monster": `all`,
+          "walkthrough": `색칠, 연사력, 화력이 어느 정도 좋은 표준적인 머뉴버<br />조무래기와 거물 모두 능숙하게 처리할 수 있는 만능 무기입니다. <br />타워, 기둥 처리를 우선적으로 수행하면 아군도 움직이기 쉬워질 것입니다.`,
+          "warning": `슬라이드 후 경직을 조심하세요`
       }
       , "Splattershot":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "walkthrough": `만능 무기 그자체. 책임감을 가지고 팀을 잘 커버해줍시다.`,
+          "warning": `전체적으로 약점이 없는 무기이니, 아군의 약점을 잘 커버해주세요!`
       }
       , "Mini Splatling":  {
-          "monster": ``,
-          "walkthrough": ``,
-          "warning": ``
+          "monster": `어깨패드 및 두더지 제외 전부`,
+          "walkthrough": `차징이 빠르고 초당 데미지가 높은 편이지만, 사거리가 짧고, 발사수가 적습니다.<br />대부분의 거물처리는 쉬운 편입니다.`,
+          "warning": `잉크 효율이 좋은 편은 아닙니다.`
       }
       , "Splat Charger":  {
           "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Slammin_Lid`,
@@ -206,9 +206,9 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `잉크효율이 좋은편은 아니니 항상 신경쓰면서 운용해야합니다.<br />풀차징시에는 5발 밖에 쏘지 못합니다`
       }
       , "Bloblobber":  {
-          "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `Drizzler,Stinger`,
+          "walkthrough": `데미지가 높은편이고, 각 방울들의 데미지들은 바운드 된다고 데미지 감쇠가 일어나지 않습니다. 방울들은 철망을 관통하니 주의하세요.`,
+          "warning": `다이버 칠이 어려운편이지만, 본체를 그냥 때린다면 데미지가 높아서 2턴킬도 가능합니다.<br />탄속이 느려, 꼬마연어 처리가 어려우니 조심하세요.`
       }
       , "Big Swig Roller":  {
           "monster": `쉽게 잘 잡는 거물은 없고
@@ -219,12 +219,12 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
       , "Explosher":  {
           "monster": `all`,
           "walkthrough": `폭발하는 탄환을 발사하는 슬로셔입니다. 진흙연어와 어깨패드는 폭탄이 아닌 메인 무기로 쓰러뜨릴 수 있다. 또한 타워는 멀리서 빠르게 처치할 수 있다. 기본적으로 기둥을 제외한 대형 몬스터를 처치하러 가는 전략이 좋다.`,
-          "warning": `사격 후 경직이 크기 때문에 사거리를 잘 활용해야 합니다. 조무래기 처리에는 약하지만, 못 하는 건 아님.`
+          "warning": `사격 후 경직이 크기 때문에 사거리를 잘 활용해야 합니다. 조무래기 처리에는 약하지만, 못 하는 건 아님.<br />탄알은 관통하니 노릴곳을 딱 노리고 쏘시면 됩니다. 기동성이 안좋으니 주변이 안전한 지 항상 잘 신경써주세요.`
       }
       , "Jet Squelcher":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `데미지가 좀 약하지만 매우 긴 사거리를 가진 무기입니다.<br />대부분의 타워는 외곽에 안 나가고도 정리할 수 있으므로　타워는 바로바로 정리해줍시다.<br />기둥은 설치 즉시 바로 잡아주세요.`
+          "walkthrough": `데미지가 좀 약하지만 매우 긴 사거리를 가진 무기입니다. 대부분의 타워는 외곽에 안 나가고도 정리할 수 있으므로 타워는 바로바로 정리해줍시다. 기둥은 설치 즉시 바로 잡아주세요.`,
+          "warning": `근접 전투는 피해주시고, 박쥐본체를 맞춰서 잡기는 좀 어렵습니다`
       }
       , "Carbon Roller":  {
           "monster": `타워 및 폭탄 제외 전부`,
@@ -232,28 +232,28 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `조무래기는 밀면 안되고 가로로 내려찍어야 합니다`
       }
       , "Tenta Brella":  {
-          "monster": ``,
-          "walkthrough": ``,
-          "warning": ``
+          "monster": `Big_Shot,Steelhead,Stinger`,
+          "walkthrough": `셸터류 중에서 한방의 데미지가 매우 강한편, 기둥의 경우 올라가서 셸터를 펼쳐 죽이는 방법이 있지만 기동력 때문에 추천하지는 않음.`,
+          "warning": `기동성이 좋지 않고, 펼치는데 시간이 오래 걸리는 편이라 둘러쌓이지 않게 조심하자.`
       }
       , "Glooga Dualies":  {
           "monster": `타워 제외 전부`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `켈빈은 데미지는 높지만 연사력이 낮아 조무래기들에게 둘러 쌓이면 탈출하기 힘듭니다. 둘러쌓일 것 같으면 스페셜 을 써서 달 하거나. 아예 스페셜을 쓰고 잡으세요`
+          "walkthrough": `슬라이드 후에 위력과 사거리가 향상되는 머누버<br />켈빈은 데미지는 높지만 연사력이 낮아 조무래기들에게 둘러 쌓이면 탈출하기 힘듭니다. 둘러쌓일 것 같으면 스페셜을 써서 달아나거나. 아예 스페셜을 쓰고 잡으세요`,
+          "warning": `슬라이드 자체에도 잉크 소비가 크기 때문에 조심하자. 소수의 적이라면 슬라이드 없이 처리하는 게 좋음`
       }
       , "Ballpoint Splatling":  {
           "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `쿠겔 슈라이버는 근거리 사격, 장거리 사격 모드가 나눠져 있는 특이한 스피너입니다. 근거리 사격으로는 뱀, 폭탄, 장거리 사격으로는 기둥, 철구습, 타워를 갈아버리시다.<br />+) 기둥을 잡음 땐 주변에 조무래기가 없는지 확인하기`
+          "walkthrough": `단거리, 장거리 모드 2개가 있는 스피너.<br />평소에는 단거리로 쏘다가, 차징을 계속 유지하다보면 장거리로 쓸 수 있다`,
+          "warning": `근거리 사격으로는 뱀, 폭탄, 장거리 사격으로는 기둥, 철구습, 타워를 갈아버리시다.<br />+) 기둥을 잡을 땐 주변에 조무래기가 없는지 확인하기`
       }
       , "Clash Blaster":  {
           "monster": `Fish_Stick,Stinger`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `클래시 블래스티는 조무래기 정리를 잘하는 편에 속합니다.<br />이를 이용해 타워나 철구속을 잡으러 가는 이군과 함께<br />편하게 진입합시다. 이외에도 컨테이너 주변에 설치되는 기 둥은 설치 즉시 정리하는게 좋습니다.`
+          "walkthrough": `클래시 블래스티는 조무래기 정리를 잘하는 편에 속합니다. 이를 이용해 타워나 철구슬을 잡으러 가는 이군과 함께 편하게 진입합시다`,
+          "warning": `컨테이너 주변에 설치되는 기둥은 설치 즉시 정리하는게 좋습니다.`
       }
       , "Tri-Stringer":  {
-          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot`,
-          "walkthrough": `없음`,
+          "monster": `Drizzler,Steelhead,Steel_Eel,Big_Shot,Slammin_Lid`,
+          "walkthrough": `차징 시간별로 용도가 다르기 때문에 평소에 무기에 대해 잘 익혀두는 편이 좋습니다.<br />풀차징은 거물 상대하기 좋고, 효율은 1바퀴 차지 될 때마다 쏘는 게 좋은 편입니다.`,
           "warning": `알 컨테이너 주변으로 들어오는 뱀, 폭탄, 박쥐 정리하기, 차지 450데미지여서 날아가는 박쥐도 두방만에 정리가 가능합니다. 여유있을 때 철구습 잡는거 돕기`
       }
       , "Splat Brella":  {
@@ -277,14 +277,14 @@ export const weaponInfos: WeaponInfo = { ".52 Gal":  {
           "warning": `박쥐의 탄알을 노리거나 폭탄을 잡기에는 사거리 짧아서 어려울 수 있습니다`
       }
       , "Hydra Splatling":  {
-          "monster": `all`,
+          "monster": `어깨패드 및 두더지 제외 전부`,
           "walkthrough": `차지 시간이 길고 이동력이 부족하지만, 사정거리, 연사력, 공격력, 총격 지속 시간이 우수한 스피너입니다. 이러한 장점을 살려 멀리서 큰 적을 차례로 처리하려고 노력하세요.<br />해변 근처에 머무르는 타워나 철구와 같은 큰 적에게 멀리서 공격할 수 있습니다.`,
-          "warning": `주변의 작은 연어 처리가 어렵습니다. 스피너의 차지 시간이 긴 특성을 감안하여 게임을 진행하세요.`
+          "warning": `차지중에는 인간속도가 떨어져, 주변 연어 처리가 어렵습니다. 스피너의 차지 시간이 긴 특성을 감안하여 게임을 진행하세요.`
       }
       , "Blaster":  {
-          "monster": `all`,
-          "walkthrough": `딱히 의식해야할 것 없음`,
-          "warning": `없음`
+          "monster": `Fish_Stick,Stinger`,
+          "walkthrough": `기둥을 평지에서 쓰러트릴 수 있고, 폭탄은 직격과 폭발로 처리하자.`,
+          "warning": `블래스터 공통으로 발사 후 경직이 있기 때문에 항상 주의하자.`
       }
       , "Octobrush":  {
           "monster": `Fish_Stick,Stinger,Steel_Eel,Slammin_Lid`,
