@@ -75,37 +75,6 @@ export const SpecialStageRender: FC<SpecialStageRenderProps> = ({
 
   const infoKey = normalizeMapName(mapName);
 
-  // TODO Add Stage Image
-  if (infoKey === "jammin'_salmon_junction") {
-    return (
-      <div
-        className={
-          "flex w-full max-w-full flex-col items-center justify-center py-1  md:gap-1 md:p-2"
-        }
-      >
-        <div className="flex max-w-md flex-col gap-4 px-2">
-          <a
-            href={`${youtubeInfo[stage][infoKey].url}${youtubeInfo[stage][infoKey].time}`}
-            target={"_blank"}
-          >
-            <h2
-              className={
-                "flex min-w-fit items-center rounded-md bg-black px-8 py-4 text-base sm:text-xl md:text-xl"
-              }
-            >
-              <img
-                src="images/YouTubeLogo.svg"
-                className={"mr-4 w-12"}
-                alt="Youtube's Logo"
-              />
-              {locale.stages[id].name} {stage === "grill" ? "그릴" : "빛파리"}{" "}
-              추천 위치
-            </h2>
-          </a>
-        </div>
-      </div>
-    );
-  }
   return (
     <div
       className={
