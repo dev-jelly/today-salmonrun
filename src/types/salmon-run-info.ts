@@ -1,4 +1,4 @@
-import {Weapon} from "./weapon";
+import { Weapon } from "./weapon";
 export type SalmonRunInfo = {
   startTime: string;
   endTime: string;
@@ -10,13 +10,12 @@ export type SalmonRunInfo = {
       name: string;
       thumbnailImage: {
         url: string;
-      }
+      };
       image: {
         url: string;
-      }
-    },
-    weapons: Weapon[],
-  }
+      };
+    };
+    weapons: Weapon[];
+  };
   __splatoon3ink_king_salmonid_guess: string;
-
-}
+};

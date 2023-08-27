@@ -3,5 +3,11 @@ export type Weapon = {
   name: string;
   image: {
     url: string;
-  }
-}
+  };
+};
+
+export type WeaponImage = {
+  imageUrl: string;
+  name: string;
+  locale: string;
+};

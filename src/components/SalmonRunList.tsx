@@ -9,7 +9,7 @@ import { usePage } from "../store/use-page";
 import { Footer } from "./Footer";
 import { NextArrow } from "./NextArrow";
 import { PrevArrow } from "./PrevArrow";
-import { MapRender } from "./MapRender";
+import { IntroRender } from "./IntroRender";
 import { useSplatoonLocale } from "../store/use-locale";
 import { animated, useSpring } from "react-spring";
 import { SpecialStageRender } from "./SpecialStageRender";
@@ -56,11 +56,17 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
   const mapItem = {
     id: salmon.setting.coopStage.name,
     renderItem: (
-      <MapRender
+      <IntroRender
         name={salmon.setting.coopStage.name}
         image={salmon.setting.coopStage.image}
         id={salmon.setting.coopStage.id}
         thumbnailImage={salmon.setting.coopStage.thumbnailImage}
+        boss={salmon.__splatoon3ink_king_salmonid_guess}
+        weapons={salmon.setting.weapons.map((w) => ({
+          ...w,
+          imageUrl: w.image.url,
+          locale: locale.weapons[w.__splatoon3ink_id]?.name ?? w.name,
+        }))}
       />
     ),
   };

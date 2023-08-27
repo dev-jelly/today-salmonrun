@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Weapon } from "../types/weapon";
+import { Weapon, WeaponImage } from "../types/weapon";
 import { weaponInfos } from "../const/weapon-info";
 
 export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
@@ -41,19 +41,7 @@ export const WeaponRender: FC<Weapon & { locale: string }> = (props) => {
   );
 };
 
-const WeaponImageRender: FC<{
-  imageUrl: string;
-  name: string;
-  locale: string;
-}> = ({
-  imageUrl,
-  name,
-  locale,
-}: {
-  imageUrl: string;
-  name: string;
-  locale: string;
-}) => {
+const WeaponImageRender: FC<WeaponImage> = ({ imageUrl, name, locale }) => {
   return (
     <div className="flex h-40 w-full flex-col items-center rounded border border-white p-2">
       <h2 className={"z-10 text-center  text-orange-400"}>{"{무기}"}</h2>
