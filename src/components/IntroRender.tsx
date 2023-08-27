@@ -29,7 +29,7 @@ export const IntroRender: FC<IntroRenderProps> = (props) => {
   );
 };
 
-function MapRender(props: Omit<IntroRenderProps, "weapons", "boss">) {
+function MapRender(props: Omit<IntroRenderProps, "weapons" | "boss">) {
   const { id, image, name } = props;
   const { locale } = useSplatoonLocale();
   return (
@@ -52,7 +52,9 @@ function MapRender(props: Omit<IntroRenderProps, "weapons", "boss">) {
   );
 }
 
-function WeaponAndBossRender(props: Pick<IntroRenderProps, "weapons", "boss">) {
+function WeaponAndBossRender(
+  props: Pick<IntroRenderProps, "weapons" | "boss">
+) {
   return (
     <div
       className={
