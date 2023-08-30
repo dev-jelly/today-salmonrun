@@ -163,18 +163,22 @@ export const SalmonRun: FC<SalmonRunProps> = ({ salmon, current, index }) => {
       </div>
       <animated.div
         style={animationStyle}
-        className="salmonrun-background relative flex w-screen flex-col justify-center  overflow-hidden bg-opacity-70 pb-8 text-white md:pb-16"
+        className="salmonrun-background relative flex w-screen flex-col justify-center  overflow-hidden bg-opacity-70 text-white"
       >
         <div className={"w-screen"}>{carouselFragment}</div>
         <button
           onClick={slideToPrevItem}
-          className={"absolute left-0 z-10 h-full p-4"}
+          className={
+            "absolute left-0 z-10 h-full p-4 sm:bg-gray-800/10 sm:hover:bg-gray-800/40"
+          }
         >
           {" <<"}
         </button>
         <button
           onClick={slideToNextItem}
-          className={"absolute right-0 z-10 h-full p-4"}
+          className={
+            "absolute right-0 z-10 h-full p-4 sm:bg-gray-800/10 sm:hover:bg-gray-800/40"
+          }
         >
           {">> "}
         </button>
